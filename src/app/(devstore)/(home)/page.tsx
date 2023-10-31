@@ -57,7 +57,11 @@ export default async function Home() {
 }
 
 async function getFeaturedProducts(): Promise<Product[]> {
-  const products = await api('/products/featured')
+  const products = await api('/products/featured', {
+    next: {
+      revalidate: 60 * 60 * 1, // 1hour
+    },
+  })
   const json = await products.json()
   return json
 }
