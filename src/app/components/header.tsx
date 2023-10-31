@@ -1,6 +1,7 @@
 import Link from 'next/link'
-import { Search, ShoppingBag } from 'lucide-react'
 import Image from 'next/image'
+import { Search, ShoppingBag } from 'lucide-react'
+
 export function Header() {
   return (
     <div className="flex items-center justify-between">
