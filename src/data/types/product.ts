@@ -5,4 +5,5 @@ export interface Product {
   slug: string
   featured: boolean
   image: string
+  description: string
 }
