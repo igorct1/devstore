@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Search } from 'lucide-react'
 import { CartWidget } from './cart-widget'
 import { SearchForm } from './search-form'
 
